@@ -1,0 +1,42 @@
+.shape h1 {
+  text-align: center;
+  padding: 21px;
+  border-bottom: 1px solid silver;
+  background: crimson;
+  margin: 0px;
+  color: white; }
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+  background-color: rgba(160, 152, 152, 0.267); }
+
+.shape {
+  width: 700px;
+  background: white;
+  border: 2px solid #fff4f4;
+  box-shadow: 2px 2px 50px white;
+  border: 1px dotted crimson; }
+  .shape h3 {
+    padding: 21px;
+    margin: 0px;
+    color: crimson; }
+  .shape ul li {
+    list-style-type: disc;
+    padding: 5px 10px;
+    color: crimson; }
+    .shape ul li a {
+      text-decoration: none;
+      color: crimson; }
+  .shape h2 {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid silver;
+    background: crimson;
+    margin: 0px;
+    color: white; }
+
+/*# sourceMappingURL=style.css.map */

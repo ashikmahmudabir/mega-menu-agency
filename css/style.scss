@@ -1,0 +1,52 @@
+// Variable of CSS
+$primary-color: crimson;
+$secondary-color: white;
+// Importing SCSS FIle 
+@import "header";
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    background-color: rgba(160, 152, 152, 0.267);
+  }
+  .shape{
+    width: 700px;
+    background: $secondary-color;
+    border: 2px solid rgb(255, 244, 244);
+    box-shadow: 2px 2px 50px $secondary-color;
+    border: 1px dotted $primary-color;
+
+    
+
+      h3{
+        padding: 21px;
+        margin: 0px;
+        color: $primary-color;
+      }
+      ul{
+        li{
+        list-style-type: disc;
+        padding: 5px 10px;
+        color: $primary-color;
+
+        a{
+            text-decoration: none;
+            color: $primary-color;
+          }
+
+      }
+    }
+
+    h2{
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid silver;
+        background: $primary-color;
+        margin: 0px;
+        color: $secondary-color;
+      }
+
+  }
