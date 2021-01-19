@@ -1,52 +1,343 @@
-// Variable of CSS
-$primary-color: crimson;
-$secondary-color: white;
-// Importing SCSS FIle 
+$primary-color: black;
+$secondary-color: rgb(27, 29, 26);
+$menus_item_color: rgb(207, 201, 201);
+$light_white: white;
+$font_family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 @import "header";
+@import "modal";
 
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: arial;
-    background-color: rgba(160, 152, 152, 0.267);
-  }
-  .shape{
-    width: 700px;
-    background: $secondary-color;
-    border: 2px solid rgb(255, 244, 244);
-    box-shadow: 2px 2px 50px $secondary-color;
-    border: 1px dotted $primary-color;
+.container{
+    width: 1170px;
+    margin: auto;
+}
+html{
+    scroll-behavior: smooth;
+}
 
-    
+// About section
 
-      h3{
-        padding: 21px;
-        margin: 0px;
-        color: $primary-color;
-      }
-      ul{
-        li{
-        list-style-type: disc;
-        padding: 5px 10px;
-        color: $primary-color;
-
-        a{
-            text-decoration: none;
-            color: $primary-color;
-          }
-
-      }
-    }
-
-    h2{
+.about {
+    padding: 100px 0px;
+    .about-inner{
+        font-family: $font_family;
         text-align: center;
-        padding: 10px;
-        border-bottom: 1px solid silver;
-        background: $primary-color;
-        margin: 0px;
-        color: $secondary-color;
-      }
+        h1{
+            font-size: 3rem;
+            margin: 0px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            .col-4{
+                width: 350px;
+                a{
+                    cursor: pointer;
+                    transition: 1s;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    color: black;
+                    &:hover{
+                        color: rgb(5, 204, 71);
+                    }
+                }
+                p{
+                    color: rgb(131, 131, 131);
+                }
+            }
+        }
+        .details_button{
+            font-family: $font_family;
+            color: black;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border: 1px solid black;
+            display: inline-block;
+            padding: 5px;
+            transition: 0.05s;
+            font-weight: bold;
+            &:hover{
+                background: black;
+                color: white;
+                
+            }
+        }
+    }
+}
 
-  }
+// Portfolios 
+.portfolios{
+    background: rgb(246, 245, 245);
+    padding: 100px 0px;
+    .portfolios-start{
+        font-family: $font_family;
+        text-align: center;
+        h1{
+            font-size: 3rem;
+            margin: 0px;
+        }
+        .details_button{
+            font-family: $font_family;
+            color: black;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border: 1px solid black;
+            display: inline-block;
+            padding: 5px;
+            transition: 0.05s;
+            font-weight: bold;
+            margin-top: 40px;
+            &:hover{
+                background: black;
+                color: white;
+                
+            }
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+           
+            .col-3{
+                img{
+                    width: 100%;
+                }
+                .port_item{
+                    width: 350px;
+                    border: 1px solid silver;
+                    box-shadow: inset 0px 0px 0px 15px rgb(0, 0, 0);
+                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+                    .overlay-text{
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(4, 58, 31, 0.705);
+                        position: absolute;
+                        top: 0px;
+                        padding: 50px 0px;
+                        opacity: 0;
+                        transition: 0.5s;
+                        h3{
+                            color: white;
+                            font-size: 2rem;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            background: white;
+                            padding: 7px 35px;
+                            transition: 0.4s;
+
+                            &:hover{
+                                background: black;
+                                color:white;
+                            }
+                            
+                        }
+                    }
+                    &:hover .overlay-text{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Services 
+
+.services
+{
+    padding: 100px 0px;
+    .services_inner
+    {
+        font-family: $font_family;
+        h1{
+            font-size: 3rem;
+            margin: 0px;
+            text-align: center;
+        }
+        p.sub_title{
+            text-align: center;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 63px;
+            .col-6{
+                width: 600px;
+                padding-top: 10px;
+                button{
+                    padding: 7px 15px;
+                    background: transparent;
+                    border: 1px solid black;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    font-weight: bold;
+                    &:hover{
+                        background: black;
+                        color: white;
+                    }
+                    
+                }
+                .sign{
+                    margin-top:20px;
+                }
+                .social_icon{
+                    width: 180px;
+                    display: flex;
+                    margin-top: 20px;
+                    justify-content: space-between;
+                    span{
+                        width: 40px;
+                        background: rgb(2, 88, 35);
+                        display: block;
+                        cursor: pointer;
+                        color: white;
+                        text-align: center;
+                        padding: 10px 0px;
+                        
+                    }
+                }
+                
+            }
+            .col-5{
+                width:500px;
+                height: 500px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Contact 
+.contact
+{
+    padding: 100px 0px;
+    background: rgb(255, 255, 255);
+    .contact_wrapper
+    {
+        .contact_inner
+        {
+            font-family: $font_family;
+            h1{
+                font-size: 3rem;
+                margin: 0px;
+                text-align: center;
+            }
+            p.sub_title{
+                text-align: center;
+            }
+            .row
+            {
+                text-align: center;
+                small{
+                    font-size: 1rem;
+                    padding: 15px 0px;
+                    display: block;
+                }
+                .col-6
+                {
+                    button{
+                        background: rgb(0, 0, 0);
+                        color: white;
+                        font-weight: bold;
+                        border: 1px solid transparent;
+                        cursor: pointer;
+                        padding:8px 15px;
+                        transition: .3s;
+
+                        &:focus{
+                            background: rgb(68, 67, 67);
+                        }
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Team 
+.team
+{
+    padding: 100px 0px;
+    background: rgb(246, 245, 245);
+    .team-wrapper
+    {
+        font-family: $font_family;
+        h1{
+            font-size: 3rem;
+            margin: 0px;
+            text-align: center;
+        }
+        p.sub_title{
+            text-align: center;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            .col-3{
+                width: 280px;
+                background: white;
+                box-shadow: 1px 1px 1px rgba(148, 148, 148, 0.76);
+                padding-bottom: 15px;
+                img{
+                    width: 100%;
+                }
+                h2{
+                    margin: 0px;
+                    padding: 10px;
+                    padding-bottom: 2px;
+                }
+                small{
+                    padding: 10px 0px 0px 15px;
+                }
+                .social_link{
+                    display: flex;
+                    margin-left: 10px;
+                    span{
+                        width: 35px;
+                        height: 35px;
+                        background: black;
+                        display: block;
+                        margin: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+// Footer 
+footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.774));
+    .copyright_text{
+        p{
+            margin: 0px;
+            padding: 8px 0px;
+            text-align: center;
+            font-family: $font_family;
+            color: $menus_item_color;
+            font-weight: bold;
+
+            a{
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+                transition: 0.4s;
+                &:hover{
+                    color: rgb(0, 177, 59); 
+                }
+            }
+
+        }
+    }
+}
+
