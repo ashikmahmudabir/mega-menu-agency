@@ -88,7 +88,7 @@ nav {
   opacity: 1; }
 
 .megaMenu-btn .megamenu-main {
-  width: 1911px;
+  width: 2102px;
   position: absolute;
   background: rgba(0, 0, 0, 0.767);
   left: -1063px;
@@ -128,7 +128,7 @@ nav {
 
 .header_item_section {
   height: 600px;
-  background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.774)), url(../255.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.774)), url(../img/255.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%; }
