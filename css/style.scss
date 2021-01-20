@@ -5,6 +5,7 @@ $light_white: white;
 $font_family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 @import "header";
 @import "modal";
+@import "details";
 
 .container{
     width: 1170px;
@@ -179,7 +180,13 @@ html{
                         background: black;
                         color: white;
                     }
-                    
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        &:hover{
+                            color: white;
+                        }
+                    }
                 }
                 .sign{
                     margin-top:20px;
@@ -205,6 +212,9 @@ html{
             .col-5{
                 width:500px;
                 height: 500px;
+                border-radius: 10% 10% 100% 100%;
+                border: 1px solid transparent;
+                overflow: hidden;
                 img{
                     width: 100%;
                 }
@@ -212,12 +222,70 @@ html{
         }
     }
 }
-
+//  Reviews 
+.reviews{
+    padding: 100px 0px;
+    .reviews-wrapper{
+        .reviews-inner{
+            font-family: $font_family;
+            h1{
+                font-size: 3rem;
+                margin: 0px;
+                text-align: center;
+            }
+            p.sub_title{
+                text-align: center;
+            }
+            .row{
+                display:flex;
+                justify-content: space-between;
+                margin-top: 100px;
+                .col-4{
+                    margin-left: 40px;
+                    .reviews_text{
+                        background: rgb(241, 241, 241);
+                        padding: 20px;
+                        border-radius: 10px;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            width: 30px;
+                            height: 30px;
+                            background: rgb(241, 241, 241);
+                            position: absolute;
+                            left: 47%;
+                            bottom: -15px;
+                            transform: rotate(50deg);
+                        }
+                    }
+                    .reviews_people{
+                        width: 100px;
+                        height: 100px;
+                        overflow: hidden;
+                        margin: auto;
+                        margin-top: 30px;
+                        border-radius: 50%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    h3,small{
+                        text-align: center;
+                        display: block;
+                        margin: 0px;
+                        padding-top: 10px;
+                    }
+                }
+          
+            }
+        }
+    }
+}
 // Contact 
 .contact
 {
     padding: 100px 0px;
-    background: rgb(255, 255, 255);
+    background: rgb(243, 243, 243);
     .contact_wrapper
     {
         .contact_inner

@@ -25,26 +25,29 @@
             <input type="search" placeholder="Search Page Item" class="search-input">
           </div>
       </div> -->
-      <nav>
+      <nav class="main_memu_items">
         <div class="container">
           <div class="flexbox">
             <div class="nav-logo">
-              <a href="">Mega Menu</a>
+              <a href="#top">Mega Menu</a>
             </div>
             <menu>
-              <ul class="primary-menu">       
-                <li><a href="#about">About</a></li>
+              <ul class="primary-menu">
+                <li class="dropdown-btn"><a href="#services">Services </a>
+                  <!-- <ul class="dropdown-menu">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Web Research</a></li>
+                  </ul> -->
+               </li>       
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#reviews">Reviews</a></li>
-                <li class="dropdown-btn"><a href="#services">Service Menu</a>
-                   <ul class="dropdown-menu">
-                     <li><a href="#">Web Design</a></li>
-                     <li><a href="#">Web Development</a></li>
-                     <li><a href="#">Web Research</a></li>
-                   </ul>
-                </li>
-                <li class="megaMenu-btn"><a href="#">Mega Menu</a>
+                <li><a href="#support">Support</a></li>
+                <li><input type="text" placeholder="Search......."></li>
+               
+                <!-- <li class="megaMenu-btn"><a href="#">Mega Menu</a>
                   <div class="megamenu-main">
                     <div class="megamenu container">
                       <div class="megamenu-item">
@@ -79,17 +82,17 @@
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </menu>
           </div>
         </div>
       </nav>
-<section class="header_item_section">
+<section class="header_item_section" id="top">
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <h1>Welcome Mega Menu Agency</h1>
+        <h1>Welcome Mega Menu Agency Ltd.</h1>
         <h2>Making Your Own Website With Mega Menu</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus minima suscipit soluta? Animi magni  quae tempora maiores tempore, eos veritatis asperiores provident dicta quo, earum facere vel possimus deleniti  quae tempora maiores tempore, eos veritatis asperiores provident dicta quo, earum facere vel possimus deleniti saepe?</p>
         <a target="_blank" href="https://www.themeforest.net"> Purchase Right now</a>
@@ -105,15 +108,15 @@
       <p>All Details are you know first of all click on the below button</p>
       <div class="row">
         <div class="col-4">
-           <a href="#">Web Design</a>
+           <a href="details-service.html">Web Design</a>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse officia quae consequatur debitis placeat amet unde ab! Tenetur unde assumenda officia sequi! Facilis, fugiat voluptates culpa harum ullam voluptate.</p>
         </div>
         <div class="col-4">
-          <a href="#">Web Development</a>
+          <a href="details-service.html">Web Development</a>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse officia quae consequatur debitis placeat amet unde ab! Tenetur unde assumenda officia sequi! Facilis, fugiat voluptates culpa harum ullam voluptate.</p>
        </div>
        <div class="col-4">
-        <a href="#">Web Research</a>
+        <a href="details-service.html">Web Research</a>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse officia quae consequatur debitis placeat amet unde ab! Tenetur unde assumenda officia sequi! Facilis, fugiat voluptates culpa harum ullam voluptate.</p>
      </div>
       </div>
@@ -158,7 +161,7 @@
           </div>
         </div>
       </div>
-      <a class="details_button" href="details-service.html">Explore Portfolios</a>
+      <a class="details_button" href="details-portflios.html">Explore Portfolios</a>
     </div>
   </div>
 </section>
@@ -173,7 +176,7 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque expedita ad possimus ipsum dolorem, repellendus blanditiis vitae porro perspiciatis libero nam corrupti ex delectus vero? Illo perferendis ipsa porro at!</p>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero cupiditate ipsum dolorem in deleniti sint repudiandae dolore labore hic perspiciatis, atque a cumque quae porro similique tempore sapiente, saepe non!</p>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero cupiditate ipsum dolorem in deleniti sint repudiandae dolore labore hic perspiciatis, atque a cumque quae porro similique tempore sapiente, saepe non!</p>
-          <button class="download_cv">Get Curriculumn Vitae</button>
+          <button><a href="img/255.jpg" class="download_cv" download="">Get Curriculumn Vitae</a></button>
           <div class="sign">
             <img src="img/sign.png" alt="">
           </div>
@@ -186,7 +189,7 @@
           </div>
         </div>
         <div class="col-5">
-          <img src="img/men.jpg" alt="">
+          <img src="img/team.png" alt="">
         </div>
       </div>
     </div>
@@ -249,8 +252,52 @@
      </div>
    </div>
  </section>
+ <!-- Reviews Section  -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="reviews-wrapper">
+        <div class="reviews-inner">
+          <h1>Getting Good Reviews From Our Client</h1>
+        <p class="sub_title">All Details are you know first of all click on the below button</p>
+        <div class="row">
+          <div class="col-4">
+            <div class="reviews_text">
+              <p>Your So Beautiful People These one. I also appreciate for your agency Mega Menu. I am full satisfied for doing the work with your team. I t's providing a good work that's every client want to them. I recommand to them for doing the work with another client. And Again thanks for full satisfied. Thanks</p>
+            </div>
+            <div class="reviews_people">
+              <img src="img/person_2.jpg" alt="">
+            </div>
+            <h3>Bill Gates.</h3>
+            <small>Microsoft Corporation,USA.</small>
+          </div>
+          <div class="col-4">
+            <div class="reviews_text">
+              <p>Your So Beautiful People These one. I also appreciate for your agency Mega Menu. I am full satisfied for doing the work with your team. I t's providing a good work that's every client want to them. I recommand to them for doing the work with another client. And Again thanks for full satisfied. Thanks</p>
+            </div>
+            <div class="reviews_people">
+              <img src="img/person_3.jpg" alt="">
+            </div>
+            <h3>Mark Zukerberg.</h3>
+            <small>Founder,Facebook USA.</small>
+          </div>
+          <div class="col-4">
+            <div class="reviews_text">
+              <p>Your So Beautiful People These one. I also appreciate for your agency Mega Menu. I am full satisfied for doing the work with your team. I t's providing a good work that's every client want to them. I recommand to them for doing the work with another client. And Again thanks for full satisfied. Thanks</p>
+            </div>
+            <div class="reviews_people">
+              <img src="img/person_4.jpg" alt="">
+            </div>
+            <h3>Alon Mask.</h3>
+            <small>Founder,SpaceX USA.</small>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
 <!-- Contact Section  -->
-<section class="contact">
+<section class="contact" id="support">
   <div class="container">
     <div class="contact_wrapper">
       <div class="contact_inner">
@@ -408,6 +455,9 @@
       document.querySelector("#modal_hire").style.display="none";
 
     }
+    window.addEventListener("scroll",function(){
+      
+    })
   </script>
 </html>
 

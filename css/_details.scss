@@ -1,0 +1,107 @@
+header{
+    background: rgb(5, 5, 5);
+    padding: 100px;
+    .header_title{
+        text-align: center;
+        color: white;
+        font-family: $font_family;
+        h1{
+            margin: 0px;
+            font-size: 4rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            transition: 0.4s;
+            
+            &:hover{
+                background: white;
+                padding: 8px 15px;
+                box-shadow: 4px 4px 50px white;
+                color: black;
+                display: inline-block;
+            }
+        }
+    }
+}
+.services_wrapper
+{
+    font-family: $font_family;
+    padding: 0px 0px 100px 0px;
+    .services_inner{
+        .container-fluid{
+            width: 1500px;
+            margin: auto;
+        }
+        .row{
+            .col-3{
+                img{
+                    width: 100%;
+                }
+                .port_item{
+                    width: 350px;
+                    border: 1px solid silver;
+                    box-shadow: inset 0px 0px 0px 15px rgb(0, 0, 0);
+                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+                    text-align: center;
+                    margin: 10px;
+                    
+                    .overlay-text{
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(4, 58, 31, 0.705);
+                        position: absolute;
+                        top: 0px;
+                        padding: 50px 0px;
+                        opacity: 0;
+                        transition: 0.5s;
+                        h3{
+                            color: white;
+                            font-size: 2rem;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            background: white;
+                            padding: 7px 35px;
+                            transition: 0.4s;
+
+                            &:hover{
+                                background: black;
+                                color:white;
+                            }
+                            
+                        }
+                    }
+                    &:hover .overlay-text{
+                        opacity: 1;
+                    }
+                }
+            }
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            .col-4{
+                width: 350px;
+                a{
+                    cursor: pointer;
+                    transition: 1s;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    color: black;
+                    &:hover{
+                        color: rgb(5, 204, 71);
+                    }
+                }
+                p{
+                    color: rgb(131, 131, 131);
+                }
+            }
+        }
+    }
+}
